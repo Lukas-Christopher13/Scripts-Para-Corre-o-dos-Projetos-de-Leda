@@ -1,0 +1,57 @@
+Grupo: OTAVIO FERREIRA CLEMENTINO
+
+1- Aspectos relacionados com instalação (10%)
+
+  [Sem Problemas]
+a) Regras claras de como executar o projeto (qualidade das instruções)
+
+  [Erro]
+b) Execução do projeto sem demais problemas
+   - A execução do projeto teve problemas, não consegui executar o projeto de primeira na minha máquina pois o java acusava a existência do
+     arquivo 'config.txt' na qual colocamos o caminho dos arquivos base, tive que modificar as classes responsáveis pela leitura desse arquivo
+     para conseguir rodar o projeto.
+
+  [Tive Problemas]
+c) >> Um problema aqui pode invalidar o resto da correção <<
+     
+   - Tive problemas, mas mesmo assim consegui rodar o projeto.
+
+2- Aspectos relacionados com a corretude do projeto (70%)
+
+a) Correção das transformações
+   
+  [Errado]
+  -Gerar um arquivo único chamado LAMetroTrips.csv substituindo o id das estações pelo nome (campo station_name) que está contido no 
+   arquivo(stations.csv)
+   
+   *Apenas o campo start_station teve seus ids alterados para o nome das estações e o campo end_startion junto aos campos start_lat, 
+   start_lon, end_lat, end_lon, taxicab_distance que não aparecem no arquivo "LAMetroTrips.csv" eles foram ignorados pelo aluno.
+   
+  [Errado]
+  - Considerando, o arquivo gerado no Item 1 (LAMetroTrips.csv), filtrar apenas as viagens que estão nas estações de Pasadena.
+  
+   *Abrindo o arquivo gerado pelo projeto do aluno vemos que existem estações que não são "Pasadena", além do mas por conta da exclusão
+    da coluna 'end_station' o teste não funciona, já que a coluna não existe e mesmo para uma coluna temos divergência no número de estações.  
+ 
+  [Sem Problemas]
+  - Considerando, o arquivo gerado no Item 1 (LAMetroTrips.csv), filtrar apenas as viagens que possuem duração maior que a média geral.
+   
+   *Sem problemas aqui.
+
+  [Com Muitos Problemas]
+b) Correção das ordenações
+
+  -Essa parte do trabalho praticamente não foi feita, são ordenados apenas o campo "station_name" por "heap sort" e por algum motivo o aluno
+   salvou o arquivo proveniente dessa ordenação como "quick sort", esse arquivo encontra se desordenado, a única ordenação que o projeto realiza
+   ocorre em memória. Acredito que o aluno pode ter feito commit errado para o git, oque resultou num projeto incompleto.  
+
+3- Aspectos de qualidade do código (20%)
+
+  [Sem Problemas]
+a) Modularização
+     Por mais que esse projeto esteja incompleto, ele se encontra bem organizado e modularizado, o aluno até fez alguns testes de unidade.
+     
+  [Sem Problemas]
+b) Algoritmos de ordenação
+    -Os algoritmos em si me parecem bem, o maior problema do projeto é que eles não foram utilizados.
+

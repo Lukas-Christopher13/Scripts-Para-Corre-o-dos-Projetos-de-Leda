@@ -1,0 +1,74 @@
+Alunos: Deyvid Jerônimo de Araújo Macêdo
+e Kaio Emanuel Rosemiro de Carvalho
+
+#Critérios para a correção geral do Projeto
+
+1- Aspectos relacionados com instalação (10%)
+
+a- Regras claras de como executar o projeto (qualidade das instruções)
+
+   [Pequeno problema]
+   *A pasta 'data' necessária para a execução do projeto não se encontra no projeto,
+    isso provavelmente ocorreu por conta do git que remove pastas vazias do projeto,
+    por conta disso é necessário criar a pasta 'data' em 'src' e daí colocar o arquivo "matches.csv".
+    Fora isso não tive outros problemas para a instalação do projeto, as instruções foram bastantes claras.
+
+b- Execução do projeto sem demais problemas
+
+   *Não tive problemas durante a execução.
+   
+c- >> Um problema aqui pode invalidar o resto da correção <<
+
+   *Sem problemas que invalidam o resto do projeto.
+   
+2- Aspectos relacionados com a corretude do projeto (70%)
+
+a- Correção das transformações
+
+    *Assim que o programa é iniciado todas as quatro transformações são realizadas e os arquivos são criados.
+    
+    [Sem problemas]
+    *Filtrar o arquivo original preservando apenas os seguintes campos: (Arquivo matches_T1.csv gerado sem problemas)
+    
+    [Tem um pequeno problema]
+    *Considerando o arquivo gerado na T1 (matches_T1.csv), Criar um novo campo de data completa chamado full_date no formato DD/MM/AAAA 
+     de acordo com os dados das colunas date e year: (Ao rodar o teste para verificar se a transformação foi realizada com sucesso foi identi
+     ficado um erro que ocorre sempre no dia 29 de fevereiro que ocorre sempre em anos bissextos, nessa ocasião as datas são convertidas para o
+     dia 1 de março)
+    
+    [Sem problemas] 
+    *Considerando, o arquivo gerado na T2 (matches_T2.csv), filtrar apenas os jogos da liga inglesa "English Premier League" através 
+     do campo league: (Arquivo matches_F1.csv gerado sem problemas)
+    
+    [Sem problemas]
+    *Considerando, o arquivo gerado na F1 (matches_F1.csv), Filtrar os jogos que tiveram attendance superior a 20.000 pagantes: 
+    (Arquivo matches_F2.csv gerado sem problemas)
+
+
+b- Correção das ordenações
+
+   [Sem grandes problemas]
+   *Todos os algoritmos são executados de forma satisfatória. Primeiro são gerados os arquivos de pior, melhor e médio caso, que são salvos
+    em pastas referentes a cada algoritmo de ordenação. Em seguida os arquivos de melhor, pior e médio caso são carregados na memória 
+    e ordenados, e o seu tempo de execução é contabilizado para cada um dos três casos.   
+    
+   [Erratas cometidas pelo grupo]
+   *O quicksort de "full date" tem seus arquivos de pior caso e melhor caso trocados e pior caso do quicksort de "venue" apresentar falhas
+    na sua ordenação decrescente.
+   
+3- Aspectos de qualidade do código (20%)
+
+a- Modularização
+   
+   *Sobre a função e o arquivo main: O grupo fez uma função 'main' muito grande e com muitas responsabilidades, esse função poderia ter sido 
+   dividida em outras funções menores para aumentar a legibilidade de código e facilitar seu entendimento.
+   
+   *O projeto possui pastas para cada tipo de algoritmo, e nelas existem algoritmos de ordenação para cada tipo de dado trabalhado pelo
+    grupo ("venue", "attendance" e "full date"). 
+    
+   *Há muita repetição de código, principalmente nos algoritmos já que cada tipo de algoritmo tem três versões diferentes para aceitar os 
+    três tipos de dados. O grupo poderia ter usado a orientação a objetos melhor para reaproveitar o código e evitar tanta duplicação de código
+   
+b- Algoritmos de ordenação
+
+   *Não encontrei problemas nos algoritmos de ordenação em si, todos eles me parecem funcionar muito bem.

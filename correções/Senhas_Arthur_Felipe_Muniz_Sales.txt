@@ -1,0 +1,56 @@
+Arthur Felipe Muniz Sales (Senhas)
+
+1- Aspectos relacionados com instalação (10%)
+
+  [Sem Problemas]
+a) Regras claras de como executar o projeto (qualidade das instruções): (As regras foram claras)
+
+  [Sem Problemas]
+b) Execução do projeto sem demais problemas: (O projeto foi executado sem problemas)
+
+  [Sem Problemas]
+c) >> Um problema aqui pode invalidar o resto da correção <<
+
+2- Aspectos relacionados com a corretude do projeto (70%)
+
+a) Correção das transformações
+
+  [Sem Problemas]
+  -Transformar data para o formato a seguir DD/MM/AAAA : (Tudo ok)
+  
+  [Sem Problemas]
+  -Filtrar senha pela categoria Boa e Muito Boa : (Tudo ok)
+  
+  [Com Problema]
+b) Correção das ordenações
+
+   A parte da ordenação por pior caso ficou bastante confusa, o aluno cria e ordena primeiro por medio e melhor caso com algum algoritmo 
+   e utiliza um dos arquivos produzidos a partir da primeira ordenação para ordenar o arquivo de pior caso. Porém essa ordenação não se dá de 
+   forma decrescente para o campo 'length' no pior caso. O aluno criou um algoritmo a parte para a ordenação por pior caso, esse algoritmo
+   ordena por pior caso mas não entrega uma saída ordenada de forma decente e sim uma crescente.
+   
+   No que se refere a ordem dos dados temos:
+   
+   - Campo 'lenght' com seu pior caso ordenado de forma crescente para todos os caso.
+   
+   - Ambas as operações com o campo 'data' tem seus médios e melhores casos ordenados de forma decrescente.
+   
+   *Pelo que eu analisei o projeto realiza sim as ordenações de melhor, médio e pior caos. Porém essas ordenações nem sempre obedecem as
+    restrições de serem crescentes e decrescentes.
+
+3- Aspectos de qualidade do código (20%)
+
+  [Sem grandes problemas]
+a) Modularização
+    
+   - O projeto é relativamente bem organizado, oque peca mesmo é o tamanho de alguns dos arquivos com a 'fachada' que tem +1700 linhas,
+     junto aos arquivos dos algoritmos de ordenação que são bem grandinhos.
+    
+  [Sem grandes problemas]
+b) Algoritmos de ordenação
+
+   - Os algoritmos estão ok, e todos funcionam. Porém há muita repetição de código desnecessária visto que foi criada uma versão do
+     mesmo algoritmos para cada tipo de dado a ser ordenado. O grupo poderia ter pensado em uma solução que utiliza uma interface comum 
+     a todos os objetos a serem ordenados para evitar a duplicação de código.
+
+     
